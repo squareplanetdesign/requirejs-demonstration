@@ -6,6 +6,9 @@ define(["animal"], function(Animal) {
     };
 
     Horse.prototype = new Animal();
+    Horse.prototype.says = function() {
+        return "The " + this.kind + " " + this.name + " says I can't tell the difference between the humans and the pigs!!!";
+    };
 
     return Horse;
 });
